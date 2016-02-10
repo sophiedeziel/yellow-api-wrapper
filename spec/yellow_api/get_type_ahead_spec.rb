@@ -2,15 +2,19 @@ require 'helper'
 
 describe YellowApi::Client::GetTypeAhead do
 
+  let(:apikey) { "d34q3259tezev7rdjkfwhw7d" }
+
   before do
-    @client = YellowApi::Client.new(:apikey => "a1s2d3f4g5h6j7k8l9k6j5j4")
+    @client = YellowApi::Client.new(:apikey => apikey)
+    @client.endpoint = "http://api.sandbox.yellowapi.com/"
   end
+
 
   describe ".get_type_ahead" do
     before do
       WebMock.allow_net_connect!
 
-      stub_get("GetTypeAhead/?apikey=a1s2d3f4g5h6j7k8l9k6j5j4&text=au&field=WHAT&UID=1").
+      stub_get("GetTypeAhead/?apikey=#{apikey}&text=au&field=WHAT&UID=1").
         to_return(:status => 200, :body => fixture("get_type_ahead.json"))
     end
 
@@ -18,7 +22,7 @@ describe YellowApi::Client::GetTypeAhead do
       wait 2 do
         suggestions = @client.get_type_ahead("au", :what)
 
-        a_get("GetTypeAhead/?apikey=a1s2d3f4g5h6j7k8l9k6j5j4&text=au&field=WHAT&lang=en&fmt=JSON&UID=#{@client.uid}").
+        a_get("GetTypeAhead/?apikey=#{apikey}&text=au&field=WHAT&lang=en&fmt=JSON&UID=#{@client.uid}").
         should have_been_made
 
         suggestions.length.should > 0
