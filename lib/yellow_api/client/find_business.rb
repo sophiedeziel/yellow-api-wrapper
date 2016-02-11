@@ -24,7 +24,6 @@ module YellowApi
       def find_business(what, where, options={})
         options[:what] = what
         options[:where] = where
-        puts options
 
        get('/FindBusiness/', options)
       end

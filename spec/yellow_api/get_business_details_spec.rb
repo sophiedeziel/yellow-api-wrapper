@@ -6,7 +6,7 @@ describe YellowApi::Client::GetBusinessDetails do
 
   before do
     @client = YellowApi::Client.new(:apikey => apikey)
-    @client.endpoint = "http://api.sandbox.yellowapi.com/"
+    @client.sandbox_enabled = true
   end
 
   describe ".get_business_details" do
