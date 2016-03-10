@@ -28,12 +28,13 @@ module YellowApi
     # @note This is currently fixed at JSON, as there is no XML support at this time
     DEFAULT_FMT="JSON"
 
-    # Keys which can be configured 
+    # Keys which can be configured
     VALID_OPTIONS_KEYS = [
       :apikey,
       :endpoint,
       :sandbox_endpoint,
       :sandbox_enabled,
+      :uid,
       :fmt
     ]
 
