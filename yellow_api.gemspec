@@ -20,7 +20,6 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'simplecov'     , '>= 0.5.0'
   gem.add_development_dependency 'webmock'       , '~> 1.7.6'
   gem.add_development_dependency 'yard'          , '~> 0.7'
-  gem.add_development_dependency 'pry'
   gem.add_runtime_dependency     'faraday'           , '>= 0.7.4'
   gem.add_runtime_dependency     'faraday_middleware', '>= 0.7.0'
   gem.add_runtime_dependency     'multi_json'        , '<  2.0'

@@ -5,7 +5,7 @@ module YellowApi
   extend Config
 
   class << self
-    
+
     # Alias for YellowApi::Client.new
     #
     # @return [YellowApi::Client]

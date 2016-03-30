@@ -1,5 +1,4 @@
 require 'helper'
-require 'pry'
 
 describe YellowApi::Client::FindBusiness do
   let(:apikey) { "d34q3259tezev7rdjkfwhw7d" }

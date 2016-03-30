@@ -1,5 +1,4 @@
 require 'yellow_api/version'
-require 'pry'
 
 module YellowApi
 
