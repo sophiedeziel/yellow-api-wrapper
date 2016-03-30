@@ -1,4 +1,5 @@
 require 'yellow_api/version'
+require 'pry'
 
 module YellowApi
 
@@ -67,6 +68,7 @@ module YellowApi
       self.sandbox_endpoint = DEFAULT_SANDBOX_ENDPOINT
       self.sandbox_enabled = DEFAULT_SANDBOX_ENABLED
       self.fmt = DEFAULT_FMT
+      self.uid = UUID.new.generate(:compact)
     end
   end
 end

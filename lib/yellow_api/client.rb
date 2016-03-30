@@ -5,6 +5,7 @@ require 'yellow_api/client/find_business'
 require 'yellow_api/client/get_business_details'
 require 'yellow_api/client/find_dealer'
 require 'yellow_api/client/get_type_ahead'
+require 'pry'
 
 module YellowApi
   class Client

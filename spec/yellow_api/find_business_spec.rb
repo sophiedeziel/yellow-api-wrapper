@@ -1,10 +1,11 @@
 require 'helper'
+require 'pry'
 
 describe YellowApi::Client::FindBusiness do
   let(:apikey) { "d34q3259tezev7rdjkfwhw7d" }
 
   before do
-    @client = YellowApi::Client.new(:apikey => apikey)
+    @client = YellowApi::Client.new(:apikey => apikey, uid: "asdf")
     @client.sandbox_enabled = true
   end
 
@@ -12,7 +13,7 @@ describe YellowApi::Client::FindBusiness do
     before do
       WebMock.allow_net_connect!
 
-      stub_get("FindBusiness/?what=barber&where=Canada&fmt=JSON&pgLen=10&apikey=#{apikey}&UID=127.0.0.1").
+      stub_get("FindBusiness/?what=barber&where=Canada&fmt=JSON&pgLen=10&apikey=#{apikey}&UID=#{@client.uid}").
         to_return(:status => 200, :body => fixture("find_business.json"))
     end
 

@@ -3,12 +3,6 @@ require 'uuid'
 module YellowApi
   class Client
     module Request
-     
-      # generates a UUID for a given instance
-      # @see https://github.com/assaf/uuid
-      def uid
-        @uid ||= UUID.new.generate(:compact)
-      end
 
       def get(path, options={})
         # stuff that's sent with every request
@@ -16,7 +10,7 @@ module YellowApi
         options[:apikey] = apikey
         options[:fmt] = fmt
         options[:UID] = uid
-        
+
         request(:get, path, options)
       end
 
