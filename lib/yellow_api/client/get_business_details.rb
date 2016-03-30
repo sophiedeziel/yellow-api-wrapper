@@ -1,4 +1,5 @@
 require 'active_support/all'
+require 'i18n'
 
 module YellowApi
   class Client
@@ -21,13 +22,13 @@ module YellowApi
       }
 
       # Gets business details.
-      # 
+      #
       # @see http://www.yellowapi.com/docs/places/#getbusinessdetails
-      # @note Requires a FindBusiness call first. 
+      # @note Requires a FindBusiness call first.
       # Information returned on this first call provides the necessary information for the GetBusinessDetails call.
       # @rate_limited Yes
       # @requires_authentication Yes
-      # @param province [String] Normalized formatted name of province where the business is located. 
+      # @param province [String] Normalized formatted name of province where the business is located.
       # If not available, use "Canada"
       # @param business_name [String] Business name
       # @param listing_id [Integer] The unique listing id identifying the business
@@ -38,25 +39,24 @@ module YellowApi
       # @example
       #   YellowApi.get_business_details("Ile-du-Prince-Edouard", "Co-operators-The", 6418182)
       def get_business_details(province, business_name, listing_id, options={})
-        options[:prov] = normalize(expand_province(province))
+        options[:prov]      = normalize(expand_province(province))
         options["bus-name"] = normalize(business_name)
         options[:listingId] = listing_id
-        options[:city] = normalize(options[:city]) if options.has_key? :city
+        options[:city]      = normalize(options[:city]) if options.has_key? :city
 
         get('/GetBusinessDetails/', options)
       end
 
       # Normalizes a given string
       #
-      # All accents are removed (i.e. ‘à’ becomes ‘a’), 
+      # All accents are removed (i.e. ‘à’ becomes ‘a’),
       # and All non-alphanumeric characters are replaced by dash “-”, and
       # Multiple dashes are replaced by a single dash.
       #
       # @see http://www.yellowapi.com/docs/places/#getbusinessdetails
       # @see http://stackoverflow.com/questions/225471/how-do-i-replace-accented-latin-characters-in-ruby
       def normalize(s)
-        s.mb_chars.normalize(:kd).gsub(/[^\x00-\x7F]/n, '').to_s
-          .gsub(/[\W]/, '-').gsub(/-+/, '-')
+        I18n.transliterate(s).gsub(/[\W]/, '-').gsub(/-+/, '-')
       end
 
       # Expands an abbreviated province

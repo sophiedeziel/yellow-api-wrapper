@@ -27,4 +27,5 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency     'rash'              , '~> 0.4.0'
   gem.add_runtime_dependency     'uuid'              , '~> 2.3.5'
   gem.add_runtime_dependency     'activesupport'     , '>= 4.0.0'
+  gem.add_runtime_dependency     'i18n'              , '~> 0.7.0'
 end
