@@ -68,7 +68,7 @@ RSpec.describe YellowApi::Client::FindBusiness do
     end
 
     context 'with options' do
-      subject { @client.find_business('hôtels', 'Montreal', pgLen: 3, pg: 2, lang: 'fr'  ) }
+      subject { @client.find_business('hôtels', 'Montreal', pgLen: 3, pg: 2) }
 
       it 'returns the correct number of businesses' do
         expect(subject.summary.page_count).to eq 347
@@ -79,7 +79,10 @@ RSpec.describe YellowApi::Client::FindBusiness do
       end
 
       it 'gets the language' do
-        expect(subject.listings.first.address.city).to eq "Montréal"
+        en = @client.find_business('hôtels', 'Montreal', pgLen: 30, pg: 2, lang: 'en')
+        fr = @client.find_business('hôtels', 'Montreal', pgLen: 30, pg: 2, lang: 'fr')
+        expect(fr.summary).to eq en.summary
+        expect(fr.listings).to_not match_array en.listings
       end
     end
   end

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.sandbox.yellowapi.com/FindBusiness/?UID=asdf&apikey=<YELLOW_API_KEY>&fmt=JSON&lang=fr&pg=2&pgLen=3&what=h%C3%B4tels&where=Montreal
+    uri: http://api.sandbox.yellowapi.com/FindBusiness/?UID=asdf&apikey=<YELLOW_API_KEY>&fmt=JSON&pg=2&pgLen=3&what=h%C3%B4tels&where=Montreal
     body:
       encoding: US-ASCII
       string: ''
@@ -21,16 +21,16 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Mon, 02 May 2016 18:32:58 GMT
+      - Mon, 02 May 2016 19:00:10 GMT
       Server:
       - Mashery Proxy
       Set-Cookie:
-      - TS01ce8515=010e4950d5269a5cdcba0bc2b5dcc823b80f56a57c52e0049778b314598caacfa4bf7008724cecd3ce6e0afd8f91a8540064472c91;
+      - TS01ce8515=010e4950d5a516fdf1583e01e3ad20c69739283c238b2426192e5eed481066c88159b1a8d2d30d7c162e56f1abac43e8e047871a05;
         Path=/
-      - f5avrbbbbbbbbbbbbbbbb=LNCDLJKIPCABPNOAGJFNCNGHFKAGFBLEMIIMNHEMALADDGAJHFIACDCIBJPAHNLBGLIDBHKMMNMLKKMHMJCGMOIABKLHMHLECEDPMHMADNEGDFPKNEFPHHIKBICIGNDI;
+      - f5avrbbbbbbbbbbbbbbbb=CBKCEDCIGEFBBFOLIGBHEILFMCFEIPNAHOAJPKEJEELDBODGMIDBIHDDOGBAGOCIHCNOEPEHBIBCNPOFCKFMKINFFEENDBNANOONIDGJHMEIKHHJKABDIFHFLHIBGKOJ;
         HttpOnly
       X-Mashery-Responder:
-      - prod-j-worker-us-east-1b-121.mashery.com
+      - prod-j-worker-us-east-1e-114.mashery.com
       Transfer-Encoding:
       - chunked
       Connection:
@@ -77,5 +77,5 @@ http_interactions:
         ZmFsc2V9LCJMb2dvIjp7ImF2YWlsIjp0cnVlLCJpbk1rdCI6dHJ1ZX0sIlVy
         bCI6eyJhdmFpbCI6dHJ1ZSwiaW5Na3QiOnRydWV9fX1dfQ==
     http_version: 
-  recorded_at: Mon, 02 May 2016 18:32:58 GMT
+  recorded_at: Mon, 02 May 2016 19:00:11 GMT
 recorded_with: VCR 3.0.1
