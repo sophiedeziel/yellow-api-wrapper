@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.licenses    = ['MIT']
   gem.authors     = ['Ian Bishop', 'Sophie Déziel']
   gem.email       = 'courrier@sophiedeziel.com'
-  gem.homepage    = 'https://github.com/sophiedeziel/yellow_api'
+  gem.homepage    = 'https://github.com/sophiedeziel/yellow-api-wrapper'
   gem.summary     = "Wrapper for the YellowPages' Yellow API"
   gem.description = "Ruby wrapper for the YellowPages' Yellow API based on Ian Bishop's yellow_api gem"
 
