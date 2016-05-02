@@ -22,8 +22,8 @@ module YellowApi
     #
     # @param attrs [Hash]
     # @return [YellowApi::Client]
-    def initialize(attrs={})
-      YellowApi.reset #TODO: this shouldn't be required since I'm extending config?
+    def initialize(attrs = {})
+      YellowApi.reset # TODO: this shouldn't be required since I'm extending config?
       attrs = YellowApi.options.merge(attrs)
       Config::VALID_OPTIONS_KEYS.each do |k|
         instance_variable_set("@#{k}".to_sym, attrs[k])

@@ -1,7 +1,6 @@
 module YellowApi
   class Client
     module FindBusiness
-
       # Returns a listing of businesses matching specified criteria
       #
       # @see http://www.yellowapi.com/docs/places/#findbusiness
@@ -21,11 +20,11 @@ module YellowApi
       # @example
       #   YellowApi.find_business("restaurant", "Toronto")
       #   YellowApi.find_business("h%C3%B4tels", "cZ-73.61995,45.49981")
-      def find_business(what, where, options={})
-        options[:what] = what
+      def find_business(what, where, options = {})
+        options[:what]  = what
         options[:where] = where
 
-       get('/FindBusiness/', options)
+        get('/FindBusiness/', options)
       end
     end
   end

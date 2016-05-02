@@ -1,7 +1,6 @@
 module YellowApi
   class Client
     module FindDealer
-
       # Returns a list of all dealers/franchises/branches for that business.
       #
       # @see http://www.yellowapi.com/docs/places/#finddealer
@@ -18,12 +17,11 @@ module YellowApi
       # @example
       #   YellowApi.find_dealer(6418182)
       #   YellowApi.find_dealer(6418182, { :pgLen => 1 })
-      def find_dealer(parent_id, options={})
+      def find_dealer(parent_id, options = {})
         options[:pid] = parent_id
 
         get('/FindDealer/', options)
       end
-
     end
   end
 end

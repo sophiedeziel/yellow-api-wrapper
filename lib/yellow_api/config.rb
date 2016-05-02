@@ -1,23 +1,21 @@
 require 'yellow_api/version'
 
 module YellowApi
-
   # Defines constants for default configuration
   module Config
-
     DEFAULT_APIKEY = nil
 
     # The endpoint that will be used to connect if none is set and
     # mode is not set to sandbox
     #
     # @see http://www.yellowapi.com/docs/places/#doc_char
-    DEFAULT_ENDPOINT = "http://api.yellowapi.com"
+    DEFAULT_ENDPOINT = 'http://api.yellowapi.com'.freeze
 
     # The endpoint that will be used to connect if none is set and
     # mode is set to sandbox
     #
     # @see http://www.yellowapi.com/docs/places/#doc_char
-    DEFAULT_SANDBOX_ENDPOINT = "http://api.sandbox.yellowapi.com"
+    DEFAULT_SANDBOX_ENDPOINT = 'http://api.sandbox.yellowapi.com'.freeze
 
     # Sets the configuration for which type of API key is being used
     # @note Changing this to be enabled will automatically switch to using the DEFAULT_SANDBOX_ENDPOINT
@@ -26,7 +24,7 @@ module YellowApi
 
     # Content type of response to be consumed
     # @note This is currently fixed at JSON, as there is no XML support at this time
-    DEFAULT_FMT="JSON"
+    DEFAULT_FMT = 'JSON'.freeze
 
     # Keys which can be configured
     VALID_OPTIONS_KEYS = [
@@ -36,7 +34,7 @@ module YellowApi
       :sandbox_enabled,
       :uid,
       :fmt
-    ]
+    ].freeze
 
     attr_accessor *VALID_OPTIONS_KEYS
 

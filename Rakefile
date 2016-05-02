@@ -6,12 +6,10 @@ Bundler::GemHelper.install_tasks
 require 'rspec/core/rake_task'
 RSpec::Core::RakeTask.new(:spec)
 
-task :default => :spec
-task :test => :spec
+task default: :spec
+task test: :spec
 
-if !ENV["APPRAISAL_INITIALIZED"] && !ENV["TRAVIS"]
-  task :default => :appraisal
-end
+task default: :appraisal if !ENV['APPRAISAL_INITIALIZED'] && !ENV['TRAVIS']
 
 require 'yard'
 namespace :doc do
@@ -20,4 +18,3 @@ namespace :doc do
     task.options = ['--markup', 'markdown']
   end
 end
-

@@ -1,25 +1,21 @@
-require 'active_support/all'
-require 'i18n'
-
 module YellowApi
   class Client
     module GetBusinessDetails
-
       PROVINCE_ABBREVIATION_MAP = {
-        :ab => "Alberta",
-        :bc => "British-Columbia",
-        :mb => "Manitoba",
-        :nb => "New-Brunswick",
-        :nl => "Newfoundland-and-Labrador",
-        :nt => "Northwest-Territories",
-        :ns => "Nova-Scotia",
-        :nu => "Nunavut",
-        :on => "Ontario",
-        :pe => "Prince-Edward-Island",
-        :qc => "Quebec",
-        :sk => "Saskatchewan",
-        :yt => "Yukon"
-      }
+        ab: 'Alberta',
+        bc: 'British-Columbia',
+        mb: 'Manitoba',
+        nb: 'New-Brunswick',
+        nl: 'Newfoundland-and-Labrador',
+        nt: 'Northwest-Territories',
+        ns: 'Nova-Scotia',
+        nu: 'Nunavut',
+        on: 'Ontario',
+        pe: 'Prince-Edward-Island',
+        qc: 'Quebec',
+        sk: 'Saskatchewan',
+        yt: 'Yukon'
+      }.freeze
 
       # Gets business details.
       #
@@ -38,11 +34,11 @@ module YellowApi
       # @return {Hash}
       # @example
       #   YellowApi.get_business_details("Ile-du-Prince-Edouard", "Co-operators-The", 6418182)
-      def get_business_details(province, business_name, listing_id, options={})
+      def get_business_details(province, business_name, listing_id, options = {})
         options[:prov]      = normalize(expand_province(province))
-        options["bus-name"] = normalize(business_name)
+        options['bus-name'] = normalize(business_name)
         options[:listingId] = listing_id
-        options[:city]      = normalize(options[:city]) if options.has_key? :city
+        options[:city]      = normalize(options[:city]) if options.key? :city
 
         get('/GetBusinessDetails/', options)
       end

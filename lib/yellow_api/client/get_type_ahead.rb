@@ -1,7 +1,6 @@
 module YellowApi
   class Client
     module GetTypeAhead
-
       # The type ahead call returns search suggestions based on the characters a user has entered.
       # The user can select the suggested term, saving them from having to enter all the characters for their search term.
       #
@@ -16,15 +15,14 @@ module YellowApi
       # @example
       #   YellowApi.get_type_ahead("au", :what)
       #   YellowApi.get_type_ahead("monc", :where, "fr")
-      def get_type_ahead(text, field, lang="en")
+      def get_type_ahead(text, field, lang = 'en')
         options = {
-          :text => text,
-          :lang => lang,
-          :field => field.to_s.upcase
+          text: text,
+          lang: lang,
+          field: field.to_s.upcase
         }
         get('/GetTypeAhead/', options)
       end
-
     end
   end
 end

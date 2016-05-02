@@ -3,8 +3,7 @@ require 'uuid'
 module YellowApi
   class Client
     module Request
-
-      def get(path, options={})
+      def get(path, options = {})
         # stuff that's sent with every request
         # but define by api initialization
         options[:apikey] = apikey
