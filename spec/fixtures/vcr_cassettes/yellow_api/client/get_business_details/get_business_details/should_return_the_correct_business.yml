@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.sandbox.yellowapi.com/GetBusinessDetails/?UID=asdf&apikey=<YELLOW_API_KEY>&bus-name=Co-operators-The&city=Calgary&fmt=JSON&listingId=6418182&prov=Ile-du-Prince-Edouard
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Mon, 02 May 2016 16:04:58 GMT
+      Server:
+      - Mashery Proxy
+      Set-Cookie:
+      - TS01ce8515=010e4950d5618e96aaddad66c7782c08edb3542e2bec311ab49ee476aafe6f6cf31dbabb3b44fdba4334750f55e64b43626542e357;
+        Path=/
+      - f5avrbbbbbbbbbbbbbbbb=GENPFMPENNJFIBBJEMEOFEMAIKFNJMNOLLGFFDJKJCKDKCNFHNFIFNPHNGKAPAFBHJFGFLBPOPOGAPPMBHDPPJIFIPNCMKADKFBPJLKGNEGHHDFKIGMNDLFCBFIBFOJO;
+        HttpOnly
+      X-Mashery-Responder:
+      - prod-j-worker-us-east-1b-115.mashery.com
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":"6418182","name":"The Co-operators","address":{"street":"","city":"","prov":"","pcode":""},"phones":[{"npa":"403","nxx":"653","num":"4421","dispNum":"403-653-4421","type":"primary"},{"npa":"403","nxx":"653","num":"5511","dispNum":"403-653-5511","type":"fax"}],"categories":[{"name":"General
+        Insurance","isSensitive":false},{"name":"Insurance Agents & Brokers","isSensitive":false},{"name":"Health,
+        Travel, & Life Insurance","isSensitive":false}],"products":{"webUrl":["http://www.cooperators.ca"],"dispAd":[{"url":"http://cdn.ci1.yp.ca/f/1589/21/15892175ab_f.jpg","thmbUrl":"http://cdn.ci5.yp.ca/l/1589/21/15892175ab_l.gif"}],"videos":[],"photos":[],"profiles":[{"lang":"FR","keywords":{"OpenHrs":["Lundi
+        8:30 - 17:00","Mardi 8:30 - 17:00","Mercredi 8:30 - 17:00","Jeudi 8:30 - 17:00","Vendredi
+        8:30 - 17:00"],"LangSpk":["Anglais"],"ProdServ":["Assurance maladie"]}},{"lang":"EN","keywords":{"OpenHrs":["Monday
+        8:30 am - 5:00 pm","Tuesday 8:30 am - 5:00 pm","Wednesday 8:30 am - 5:00 pm","Thursday
+        8:30 am - 5:00 pm","Friday 8:30 am - 5:00 pm"],"LangSpk":["English"],"ProdServ":["Auto
+        Insurance","Business Insurance","Commercial Insurance","Financial Planning","Financial
+        Service","Health Insurance","Home Insurance","Insurance","Insurance Broker","Insurance
+        Life","Insurance Service","Life","Life Insurance"]}}]},"logos":{"EN":"http://cdn.ci5.yp.ca/t/1582/91/15829183aa_t.gif","FR":"http://cdn.ci2.yp.ca/t/1579/96/15799641aa_t.gif"},"merchantUrl":"http://www.yellowpages.ca/bus/Canada/The-Co-operators/6418182.html"}'
+    http_version: 
+  recorded_at: Mon, 02 May 2016 16:04:59 GMT
+recorded_with: VCR 3.0.1

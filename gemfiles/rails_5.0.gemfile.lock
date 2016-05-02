@@ -146,8 +146,9 @@ GEM
       thread_safe (~> 0.1)
     uuid (2.3.8)
       macaddr (~> 1.0)
-    webmock (1.7.10)
-      addressable (~> 2.2, > 2.2.5)
+    vcr (3.0.1)
+    webmock (1.8.11)
+      addressable (>= 2.2.7)
       crack (>= 0.1.7)
     websocket-driver (0.6.3)
       websocket-extensions (>= 0.1.0)
@@ -163,9 +164,10 @@ DEPENDENCIES
   rake (~> 0.9)
   rspec (~> 2.6)
   simplecov (>= 0.5.0)
-  webmock (~> 1.7.6)
+  vcr (~> 3.0)
+  webmock (~> 1.8.0)
   yard (~> 0.7)
   yellow-api-wrapper!
 
 BUNDLED WITH
-   1.11.2
+   1.12.1

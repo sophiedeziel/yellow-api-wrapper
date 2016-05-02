@@ -3,7 +3,8 @@ require File.expand_path('../lib/yellow_api/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.name        = 'yellow-api-wrapper'
   gem.version     = YellowApi::VERSION
-  gem.author      = 'Sophie Déziel'
+  gem.licenses    = ['MIT']
+  gem.authors     = ['Ian Bishop', 'Sophie Déziel']
   gem.email       = 'courrier@sophiedeziel.com'
   gem.homepage    = 'https://github.com/sophiedeziel/yellow_api'
   gem.summary     = %q{Wrapper for the YellowPages' Yellow API}
@@ -17,8 +18,9 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'rake'          , '~> 0.9'
   gem.add_development_dependency 'rspec'         , '~> 2.6'
   gem.add_development_dependency 'simplecov'     , '>= 0.5.0'
-  gem.add_development_dependency 'webmock'       , '~> 1.7.6'
+  gem.add_development_dependency 'webmock'       , '~> 1.8.0'
   gem.add_development_dependency 'yard'          , '~> 0.7'
+  gem.add_development_dependency 'vcr'           , '~> 3.0'
   gem.add_runtime_dependency     'faraday_middleware', '>= 0.7.0'
   gem.add_runtime_dependency     'rash'              , '~> 0.4.0'
   gem.add_runtime_dependency     'uuid'              , '~> 2.3.5'
