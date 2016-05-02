@@ -10,9 +10,9 @@ Gem::Specification.new do |gem|
   gem.summary     = "Wrapper for the YellowPages' Yellow API"
   gem.description = "Ruby wrapper for the YellowPages' Yellow API based on Ian Bishop's yellow_api gem"
 
-  gem.files         = `git ls-files`.split("\n")
+  gem.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  gem.executables   = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }
+  gem.executables   = gem.files.grep(%r{^exe/}) { |f| File.basename(f) }
   gem.require_paths = ['lib']
 
   gem.add_development_dependency 'rake', '~> 0.9'

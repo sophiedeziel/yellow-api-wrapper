@@ -2,7 +2,7 @@ $LOAD_PATH.unshift File.expand_path('..', __FILE__)
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'simplecov'
 SimpleCov.start
-require 'yellow_api'
+require 'yellow-api-wrapper'
 require 'rspec'
 require 'pry'
 require 'vcr'
