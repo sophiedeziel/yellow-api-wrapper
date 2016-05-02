@@ -9,6 +9,10 @@ RSpec::Core::RakeTask.new(:spec)
 task :default => :spec
 task :test => :spec
 
+if !ENV["APPRAISAL_INITIALIZED"] && !ENV["TRAVIS"]
+  task :default => :appraisal
+end
+
 require 'yard'
 namespace :doc do
   YARD::Rake::YardocTask.new do |task|
@@ -16,3 +20,4 @@ namespace :doc do
     task.options = ['--markup', 'markdown']
   end
 end
+
