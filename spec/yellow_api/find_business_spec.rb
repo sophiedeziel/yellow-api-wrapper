@@ -12,8 +12,8 @@ RSpec.describe YellowApi::Client::FindBusiness do
     subject { @client.find_business('barber', 'Canada') }
 
     it 'returns the correct number of businesses' do
-      expect(subject.summary.listingsPerPage).to eq 1
-      expect(subject.listings.count).to eq 1
+      expect(subject.summary.listingsPerPage).to eq 15
+      expect(subject.listings.count).to eq 15
     end
 
     it 'returns the correct format for businesses' do

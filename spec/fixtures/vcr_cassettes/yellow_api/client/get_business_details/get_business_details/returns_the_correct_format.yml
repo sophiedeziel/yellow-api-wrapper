@@ -21,14 +21,16 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Mon, 02 May 2016 17:38:19 GMT
+      - Mon, 02 May 2016 18:33:10 GMT
       Server:
       - Mashery Proxy
       Set-Cookie:
-      - TS01ce8515=01582184e87c3f535091f5f350fadb9f6991fcca5091da9a8443ff0162f18122b46ced1d7d;
+      - TS01ce8515=010e4950d5b2b6aa807584adc40792485f78f7a6aa1f07b988d4180a88e471a2412a5a95a37ccf1cb78fb68a0193f4d4bc86bbe9d1;
         Path=/
+      - f5avrbbbbbbbbbbbbbbbb=EHAPNFGDPFLCDHBCANJMBAFJGPKLDLFEAKBAKFCJPIDDAJBHGDDGLCJEJDLAGAKACLGHAFEONOLAFMCGNJNEANIODEGHALLGGEGBJIKEBHBBACLEPOMLAFPLJNMPOGCD;
+        HttpOnly
       X-Mashery-Responder:
-      - prod-j-worker-us-east-1b-115.mashery.com
+      - prod-j-worker-us-east-1b-118.mashery.com
       Transfer-Encoding:
       - chunked
       Connection:
@@ -37,14 +39,14 @@ http_interactions:
       encoding: UTF-8
       string: '{"id":"6418182","name":"The Co-operators","address":{"street":"","city":"","prov":"","pcode":""},"phones":[{"npa":"403","nxx":"653","num":"4421","dispNum":"403-653-4421","type":"primary"},{"npa":"403","nxx":"653","num":"5511","dispNum":"403-653-5511","type":"fax"}],"categories":[{"name":"General
         Insurance","isSensitive":false},{"name":"Insurance Agents & Brokers","isSensitive":false},{"name":"Health,
-        Travel, & Life Insurance","isSensitive":false}],"products":{"webUrl":["http://www.cooperators.ca"],"dispAd":[{"url":"http://cdn.ci3.yp.ca/f/1589/21/15892175ab_f.jpg","thmbUrl":"http://cdn.ci2.yp.ca/l/1589/21/15892175ab_l.gif"}],"videos":[],"photos":[],"profiles":[{"lang":"FR","keywords":{"OpenHrs":["Lundi
+        Travel, & Life Insurance","isSensitive":false}],"products":{"webUrl":["http://www.cooperators.ca"],"dispAd":[{"url":"http://cdn.ci2.yp.ca/f/1589/21/15892175ab_f.jpg","thmbUrl":"http://cdn.ci1.yp.ca/l/1589/21/15892175ab_l.gif"}],"videos":[],"photos":[],"profiles":[{"lang":"FR","keywords":{"OpenHrs":["Lundi
         8:30 - 17:00","Mardi 8:30 - 17:00","Mercredi 8:30 - 17:00","Jeudi 8:30 - 17:00","Vendredi
         8:30 - 17:00"],"LangSpk":["Anglais"],"ProdServ":["Assurance maladie"]}},{"lang":"EN","keywords":{"OpenHrs":["Monday
         8:30 am - 5:00 pm","Tuesday 8:30 am - 5:00 pm","Wednesday 8:30 am - 5:00 pm","Thursday
         8:30 am - 5:00 pm","Friday 8:30 am - 5:00 pm"],"LangSpk":["English"],"ProdServ":["Auto
         Insurance","Business Insurance","Commercial Insurance","Financial Planning","Financial
         Service","Health Insurance","Home Insurance","Insurance","Insurance Broker","Insurance
-        Life","Insurance Service","Life","Life Insurance"]}}]},"logos":{"EN":"http://cdn.ci3.yp.ca/t/1488/45/14884561aa_t.gif","FR":"http://cdn.ci1.yp.ca/t/1577/09/15770919aa_t.gif"},"merchantUrl":"http://www.yellowpages.ca/bus/Canada/The-Co-operators/6418182.html"}'
+        Life","Insurance Service","Life","Life Insurance"]}}]},"logos":{"EN":"http://cdn.ci5.yp.ca/t/1582/91/15829183aa_t.gif","FR":"http://cdn.ci4.yp.ca/t/1582/91/15829183aa_t.gif"},"merchantUrl":"http://www.yellowpages.ca/bus/Canada/The-Co-operators/6418182.html"}'
     http_version: 
-  recorded_at: Mon, 02 May 2016 17:38:20 GMT
+  recorded_at: Mon, 02 May 2016 18:33:10 GMT
 recorded_with: VCR 3.0.1

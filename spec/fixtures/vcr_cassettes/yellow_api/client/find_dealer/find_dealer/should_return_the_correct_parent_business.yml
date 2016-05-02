@@ -21,18 +21,16 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Mon, 02 May 2016 16:03:36 GMT
+      - Mon, 02 May 2016 18:33:03 GMT
       Server:
       - Mashery Proxy
       Set-Cookie:
-      - TS01ce8515=010e4950d5af6ac636397d22e22ce19e61d9bb3d418ad3f0e5b6bc938bb6cc1c6a0a7a646100bd89faf05722f3b51fa12dad46b1bc;
+      - TS01ce8515=01582184e822231839460f78f7e65f482f0d3b5545a8e8942794d746e64940328ae1e07dd1;
         Path=/
-      - f5avrbbbbbbbbbbbbbbbb=GCNHEOEOKNNFFMLKNLCJPHFAPDEFLCPFCINJOBBJFIDDJHMDEMHGCIMNIGIAOBPGFIMHBFHAMNMBJIMMMHNLFDNDIDLEGLJKAJFOKHILPCGIKDAFIBBKJNIEDFICGICK;
-        HttpOnly
       X-Mashery-Responder:
-      - prod-j-worker-us-east-1b-109.mashery.com
-      Content-Length:
-      - '712'
+      - prod-j-worker-us-east-1e-124.mashery.com
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
     body:
@@ -41,5 +39,5 @@ http_interactions:
         Cantin","address":{"street":"900 Lasalle Blvd","city":"Sudbury","prov":"ON","pcode":"P3A
         5W8"},"geoCode":{"latitude":"46.522107","longitude":"-80.961147"},"distance":"","parentId":"6418182","isParent":false,"content":{"Video":{"avail":false,"inMkt":false},"Photo":{"avail":false,"inMkt":false},"Profile":{"avail":true,"inMkt":true},"DspAd":{"avail":false,"inMkt":false},"Logo":{"avail":false,"inMkt":false},"Url":{"avail":true,"inMkt":false}}}]}'
     http_version: 
-  recorded_at: Mon, 02 May 2016 16:03:37 GMT
+  recorded_at: Mon, 02 May 2016 18:33:03 GMT
 recorded_with: VCR 3.0.1

@@ -21,16 +21,16 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Mon, 02 May 2016 17:59:15 GMT
+      - Mon, 02 May 2016 18:32:51 GMT
       Server:
       - Mashery Proxy
       Set-Cookie:
-      - TS01ce8515=010e4950d518b7be04439810d844da082537c75dbbefa547092c15bd84464a20fb154fe0b4b014283ec156f273880eff8ade43f022;
+      - TS01ce8515=010e4950d5a0d50187bdfd3871b48f385e7458b5f293c9b06f49185f5f29cbce78e141b31d5072722f2772513fc3a4ffa9a593c585;
         Path=/
-      - f5avrbbbbbbbbbbbbbbbb=DEICOIGPCKBLAGBDGDEFHGDFJGPIAFOHJPLKJCCLGKHDNCNAIIFHDBJPKAKAKKGPPDIJFALCPOBAECDNNJMDPLOGILMJBKAJCOHLBKGDEMGBODFKDFBGHKGALCOGMFJF;
+      - f5avrbbbbbbbbbbbbbbbb=OIEHJHDNHFAEMMJLGIOGAOPNEIOFOEBIINILILONALNDEPLKIFGODEFLMPCAINEMPLJABMDJGECDAMOILJCGHJDNIPOHEPPMJGDBBCPFNDJBDELHFGLJLBEKADOJBDMK;
         HttpOnly
       X-Mashery-Responder:
-      - prod-j-worker-us-east-1d-119.mashery.com
+      - prod-j-worker-us-east-1d-113.mashery.com
       Content-Length:
       - '7621'
       Connection:
@@ -209,5 +209,5 @@ http_interactions:
         YWlsIjp0cnVlLCJpbk1rdCI6dHJ1ZX0sIlVybCI6eyJhdmFpbCI6dHJ1ZSwi
         aW5Na3QiOnRydWV9fX1dfQ==
     http_version: 
-  recorded_at: Mon, 02 May 2016 17:59:15 GMT
+  recorded_at: Mon, 02 May 2016 18:32:51 GMT
 recorded_with: VCR 3.0.1
