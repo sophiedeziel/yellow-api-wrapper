@@ -1,4 +1,5 @@
 # Yellow API
+[![Build Status](https://travis-ci.org/sophiedeziel/yellow-api-wrapper.svg?branch=master)](https://travis-ci.org/sophiedeziel/yellow-api-wrapper)
 
 Ruby wrapper for the YellowPages' [YellowAPI](http://www.yellowapi.com).
 
@@ -7,7 +8,7 @@ Ruby wrapper for the YellowPages' [YellowAPI](http://www.yellowapi.com).
 $ gem install yellow_api
 ```
 ## Usage
-  
+
 ### Creating a client
 ``` ruby
 # Production
